@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 50px 20px;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+#totalBalance {
+  font-size: 1.2em;
+}
