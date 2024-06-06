@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.userName {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.userName:hover {
+  text-decoration: underline;
+}
