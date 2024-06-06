@@ -1,0 +1,49 @@
+Differences between Spread and Rest Operators
+
+Spread Operator:
+- Syntax: ...array or ...object
+- Usage:
+  1. Creating a copy of an array and adding additional elements:
+    const arr1 = [1, 2, 3];
+    const arr2 = [4, 5, 6];
+    const combinedArray = [...arr1, ...arr2]; // [1, 2, 3, 4, 5, 6]
+
+  2. Passing array elements as function arguments:
+    const numbers = [1, 2, 3, 4, 5];
+    const maxNumber = Math.max(...numbers); // 5
+
+  3. Copying an object and adding new properties:
+    const obj = { key1: 'value1', key2: 'value2' };
+    const newObj = { ...obj, newKey: 'newValue' }; // { key1: 'value1', key2: 'value2', newKey: 'newValue' }
+
+Rest Operator:
+- Syntax: ...variableName
+- Usage:
+  1. Collecting additional function arguments into an array:
+    function sum(...args) {
+        return args.reduce((acc, val) => acc + val, 0);
+    }
+    sum(1, 2, 3, 4); // 10
+
+  2. Extracting remaining object properties:
+    const { firstProp, secondProp, ...restProps } = obj;
+
+Spread Operator Examples:
+- Merging arrays:
+  const arr1 = [1, 2, 3];
+  const arr2 = [4, 5, 6];
+  const mergedArray = [...arr1, ...arr2]; // [1, 2, 3, 4, 5, 6]
+
+- Creating a copy of an array:
+  const originalArray = [1, 2, 3];
+  const copyArray = [...originalArray]; // [1, 2, 3]
+
+Rest Operator Examples:
+- Destructuring an array:
+  const [first, second, ...rest] = [1, 2, 3, 4, 5]; // first = 1, second = 2, rest = [3, 4, 5]
+
+- Collecting remaining function arguments:
+  function example(firstArg, secondArg, ...restArgs) {
+      console.log(restArgs);
+  }
+  example(1, 2, 3, 4, 5); // [3, 4, 5]
